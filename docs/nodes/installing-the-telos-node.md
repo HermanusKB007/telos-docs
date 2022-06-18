@@ -2,22 +2,26 @@
 id: Installing client software
 ---
 # Installing `nodeos` 🚀 - Telos Nodes!
-This section have been adopted from [EOSIO developer documentation].(https://developers.eos.io/manuals/eos/latest/index).
+This section have been adopted from [EOSIO developer documentation](https://developers.eos.io/manuals/eos/latest/index).
 
-Teelos blockchain network is build on the EOSIO platform. The EOSIO platform provides the components required to operate a Telos node, to collect blockchain data, to interact with nodes, and to build smart contracts.
+In the previous section we introduced the two different modes `nodeos` can be configured to operate as:
+1. Block producing node, and
+2. Non-producing node.
+
+In this section, instructions will be provided to help you get started as a producing node or non-producing node.
+
+Telos blockchain network is build on the EOSIO platform. The EOSIO platform provides the components required to operate a Telos node, to collect blockchain data, to interact with nodes, and to build smart contracts.
 
 The main components required to run the Telos blockchain network (or any EOSIO-based blockchain) is:
 1. `nodeos` (node + EOSIO) that is configured to run a node (as a block producer, as dedicated API endpoints and local development)
 2. `cleos` (CLI + EOSIO) is a command line interface used to interact with `nodeos`, allowing you the send commands and actions to a blockchain.
 3. `keos` (key + EOSIO) is a local component that stores and manages EOSIO keys in wallets and provides a secrure enclave for digital signing.
 
-To build smart contracts you need `EOSIO.CDT`. `EOSIO.CDT` generates `WebAssembly` binary instructions or `bytecode` into `wasm` files. The generated `wasm` files are the smart contracts which can be deployed to Telos blockchains.
+As a developer, to build smart contracts you need `EOSIO.CDT`. `EOSIO.CDT` generates `WebAssembly` binary instructions or `bytecode` into `wasm` files. The generated `wasm` files are the smart contracts which can be deployed to Telos blockchains. EOSIO provides a frontend library for Javascript development called `EOSJS`. `EOSJS` API SDK integrates with EOSIO-based blockchains using the EOSIO RPC API. EOSIO also provides Swift and Java SDKs for native mobile application development.
 
-EOSIO provides a frontend library for Javascript development called `EOSJS`. `EOSJS` API SDK integrates with EOSIO-based blockchains using the EOSIO RPC API. EOSIO also provides Swift and Java SDKs for native mobile application development.
+To get started as a developer, you need to [prepare your development environment](https://developers.eos.io/welcome/latest/getting-started-guide/local-development-environment/index).
 
-To get started, you need to [prepare your development environment](https://developers.eos.io/welcome/latest/getting-started-guide/local-development-environment/index).
-
-## Development Environment
+## Configuring Nodeos for Development Environment
 
 The following list provides instructions to prepare your local development environment:
 1. Check [system requirements](https://developers.eos.io/welcome/v2.0/getting-started-guide/local-development-environment/system_requirements).
@@ -29,9 +33,15 @@ The following list provides instructions to prepare your local development envir
 
 > Nodeos is distributed as part of the EOSIO software suite. You can download [Nodeos](https://developers.eos.io/manuals/eos/latest/install/index) here. We recommend installing the EOSIO Prebuilt Binares is you are new to EOSIO-based blockchain networks like Telos.
 
-## Hallo World Contract
-### Build and Deploy Hello World Smart Contract
-You deploy and execute smart contracts on the blockchain. A record of each transaction is immutably stored on the blockchain and smart contracts store and update state on the blockchain. A blockchain application consists of client code which calls smart contract actions. The smart contract actions execute on the blockchain.
+There are several ways to configure a `nodeos` environment for development and testing. Which option to use largely depends on what the project goals are. 
+1. Local Single-Node Testnet
+2. Local Single-Node Testnet with Consensus Protocol
+3. Local Multi-Node Testnet
+4. Official Testnet
 
-The following [link](https://developers.eos.io/welcome/latest/getting-started-guide/hello-world) point towards a tutorial to introduce you to key smart contract development concepts. Let's start with a simple smart contract that produces the traditional Hello World.
+> Go to [Development Environment](https://developers.eos.io/manuals/eos/latest/nodeos/usage/development-environment/index) for an in-depth discussion on configuring your `nodeos` setup for development and testing.
+
+## Configuring Nodeos for Producing and Non-producing environments
+Follow the [link](https://developers.eos.io/manuals/eos/latest/nodeos/usage/node-setups/index) for an in-depth discussion on how to configure `nodeos` (with the applicable plugins) to operate as a block producing node or non-producing node.
+
 
