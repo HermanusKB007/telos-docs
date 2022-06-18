@@ -21,6 +21,9 @@ As a developer, to build smart contracts you need `EOSIO.CDT`. `EOSIO.CDT` gener
 
 To get started as a developer, you need to [prepare your development environment](https://developers.eos.io/welcome/latest/getting-started-guide/local-development-environment/index).
 
+## Configuring Nodeos for Producing and Non-producing environments
+Follow the [link](https://developers.eos.io/manuals/eos/latest/nodeos/usage/node-setups/index) for an in-depth discussion on how to configure `nodeos` (with the applicable plugins) to operate as a block producing node or non-producing node.
+
 ## Configuring Nodeos for Development Environment
 
 The following list provides instructions to prepare your local development environment:
@@ -40,8 +43,3 @@ There are several ways to configure a `nodeos` environment for development and t
 4. Official Testnet
 
 > Go to [Development Environment](https://developers.eos.io/manuals/eos/latest/nodeos/usage/development-environment/index) for an in-depth discussion on configuring your `nodeos` setup for development and testing.
-
-## Configuring Nodeos for Producing and Non-producing environments
-Follow the [link](https://developers.eos.io/manuals/eos/latest/nodeos/usage/node-setups/index) for an in-depth discussion on how to configure `nodeos` (with the applicable plugins) to operate as a block producing node or non-producing node.
-
-
