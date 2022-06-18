@@ -28,3 +28,10 @@ The following list provides instructions to prepare your local development envir
 6. Create a [Telos Development Account](https://help.telos.net/en_US/getting-started/how-to-create-a-free-telos-account)
 
 > Nodeos is distributed as part of the EOSIO software suite. You can download [Nodeos](https://developers.eos.io/manuals/eos/latest/install/index) here. We recommend installing the EOSIO Prebuilt Binares is you are new to EOSIO-based blockchain networks like Telos.
+
+## Hallo World Contract
+### Build and Deploy Hello World Smart Contract
+You deploy and execute smart contracts on the blockchain. A record of each transaction is immutably stored on the blockchain and smart contracts store and update state on the blockchain. A blockchain application consists of client code which calls smart contract actions. The smart contract actions execute on the blockchain.
+
+The following [link](https://developers.eos.io/welcome/latest/getting-started-guide/hello-world) point towards a tutorial to introduce you to key smart contract development concepts. Let's start with a simple smart contract that produces the traditional Hello World.
+
