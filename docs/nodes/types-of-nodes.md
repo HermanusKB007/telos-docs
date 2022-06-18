@@ -2,9 +2,9 @@
 id: 'Types of Nodes'
 ---
 
-# Telos Block Producer Nodes
-### Getting Started with Telos Nodes
-This section discusses Telos Nodes and the role they play in the Telos blockchain network.
+# Telos Nodes
+## Getting Started with Telos Nodes
+### This section discusses Telos Nodes and the role they play in the Telos blockchain network.
 
 Telos Blockchain Network is an EOSIO-based blockchain network. Therefore, everything that is required to run EOSIO-based blockchain nodes, applies to Telos. Telos makes use of EOSIO platform specific components and libraries (`nodeos`, `cleos`, `keosd`, `EOSIO.CDT`, and `EOSJS`) to operate blockchain nodes, collect blockchain data, interact with nodes, and to build smart contracts.
 
@@ -14,7 +14,14 @@ The main component of the Telos blockchain network is nodeos (node + EOSIO). nod
 1. Block Producing node; or as 
 2. Non-producing node.
 
-The behaviour of nodeos is determined mainly by which plugins are loaded and which plugin options are used. Some plugins are mandatory (chain_plugin, net_plugin, and producer_plugin) while others are optional. For a full list of plugins, please visit [Nodeos Plugins](https://developers.eos.io/manuals/eos/latest/nodeos/plugins/index) for more details.
+The behaviour of nodeos is determined mainly by which plugins are loaded and which plugin options are used. Some plugins are mandatory (`chain_plugin`, `net_plugin`, and `producer_plugin`) while others are optional. For a full list of plugins, please visit [Nodeos Plugins](https://developers.eos.io/manuals/eos/latest/nodeos/plugins/index) for more details.
+
+`cleos` (CLI + EOS) is a command line interface with REST APIs exposed by `nodeos`. `cleos` is required to interact with the blockchain (via `nodeos`) and manages wallets (via `keosd`). Developers can also use cleos to deploy and test Telos smart contracts.
+
+`keosd` (Key + EOS)  is a key manager service daemon for storing private keys and signing digital messages. It provides a secure key storage medium for keys to be encrypted at rest in the associated wallet file. `keosd` also defines a secure enclave for signing transaction created by cleos or a third part library.
+
+All these components and libraries play a very important role in the Telos network.
+In the following section, we will explore the difference between producing and non-producing nodes and how to configure each node.
 
 ## Producing nodes
 Producing nodes are configured for block production. They connect to the Telos peer-to-peer network and actively produce new blocks. Producing nodes produce blocks on the mainnet, if they are an assigned block producer as part of the active block producing schedule.
