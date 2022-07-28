@@ -56,11 +56,15 @@ Also, producing nodes should not have open network ports. We strongly recommend 
 API nodes provide network services to client applications. They usually have account transaction histories accessible though API calls, but can vary in the amount of available history.
 
 ## A History API-node (State History node)
-State History (or History API) nodes are API nodes with a complete transaction history of all accounts. 
+State History (or History API) nodes are API nodes with a complete transaction history of all accounts that are used for querying transaction and account data from. There are various types of history, Hyperion being the most common on Telos.
+
+
 
 ## A Seed-node
-- A seed node is a special node that allows the incorporation of new nodes to the network and maintains the strength of the network at all times, by allowing them to synchronize and obtain a copy of the data from the blockchain, replicating it and adding resistance and security to it.
-- Seed nodes are nodes that accept incoming P2P connections. They are the first nodes contacted by a freshly started node. In that sense they serve as an entry point into the network. Once a node has entered the network it will receive additional node addresses from its peers, so all nodes can connect to each other. A seed node can also be an API node. The Telos core software i.e. EOSIO comes with a preconfigured list of seed nodes for easy bootstrapping.
-- The seed nodes are used only to locate or find complete nodes that are running the Telos Blockchain client.
-- So, when a new node wants to gain access to the network, it must connect with a seed node, which is a Telos client that is always active and has a static IP address. This client operates as a gateway to the Telos network, being one of the first connections that Telos clients make at the beginning.
-- Thus, seed nodes play an important role within the network, operating from highly trusted servers. Allowing new clients to connect to the Telos network automatically and without the need for manual intervention by a user. Although it may be the case that some of these nodes can become dishonest, causing a negative impact within the network. So it is not recommended to place trust in a single seed node.
+A seed node is a special node that allows the incorporation of new nodes to the network and maintains the strength of the network at all times, by allowing them to synchronize and obtain a copy of the data from the blockchain, replicating it and adding resistance and security to it.
+
+Seed nodes are nodes that accept incoming P2P connections. They are the first nodes contacted by a freshly started node. In that sense they serve as an entry point into the network. Once a node has entered the network it will receive additional node addresses from its peers, so all nodes can connect to each other. A seed node can also be an API node. The seed nodes are used only to locate or find complete nodes that are running the Telos Blockchain client.
+
+So, when a new node wants to gain access to the network, it must connect with a seed node, which is a Telos client that is always active and has a static IP address. This client operates as a gateway to the Telos network, being one of the first connections that Telos clients make at the beginning.
+
+Thus, seed nodes play an important role within the network, operating from highly trusted servers. Allowing new clients to connect to the Telos network automatically and without the need for manual intervention by a user. Although it may be the case that some of these nodes can become dishonest, causing a negative impact within the network. So it is not recommended to place trust in a single seed node.
