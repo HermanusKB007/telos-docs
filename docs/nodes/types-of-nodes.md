@@ -68,3 +68,5 @@ Seed nodes are nodes that accept incoming P2P connections. They are the first no
 So, when a new node wants to gain access to the network, it must connect with a seed node, which is a Telos client that is always active and has a static IP address. This client operates as a gateway to the Telos network, being one of the first connections that Telos clients make at the beginning.
 
 Thus, seed nodes play an important role within the network, operating from highly trusted servers. Allowing new clients to connect to the Telos network automatically and without the need for manual intervention by a user. Although it may be the case that some of these nodes can become dishonest, causing a negative impact within the network. So it is not recommended to place trust in a single seed node.
+
+A seed node can also be an API node, and the P2P list for mainnet and testnet can be found at the [node-template repo](https://github.com/telosnetwork/node-template), the genesis.json is also available there.
